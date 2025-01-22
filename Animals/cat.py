@@ -5,6 +5,6 @@ class Cat(Animal):
     def __init__(self, name, year_of_birth):
         super().__init__(name, year_of_birth)
     
-    def make_sound(self):
+    def make_sound(self) -> str:
         play_sound("cat")
-        print("Miaauu")
+        return "Miaauu"

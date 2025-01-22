@@ -12,4 +12,4 @@ if __name__ == "__main__":
 
     for i in dyr:
         print(i.get_age())
-        i.make_sound()
+        print(i.make_sound())

@@ -6,11 +6,11 @@ class Animal(ABC):
         self.name = name
         self.year_of_birth = year_of_birth
 
-    def get_age(self):
+    def get_age(self) -> str:
         age = datetime.now().year - self.year_of_birth
         return f"Navn: {self.name}, alder: {age}"
         
     @abstractmethod
-    def make_sound(self):
+    def make_sound(self) -> str:
         pass
             
