@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from datetime import datetime
 
 class Animal(ABC):
-    def __init__(self, name, year_of_birth):
+    def __init__(self, name: str, year_of_birth: int):
         self.name = name
         self.year_of_birth = year_of_birth
 
